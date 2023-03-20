@@ -1,0 +1,17 @@
+#@ load("@ytt:data", "data")
+---
+apiVersion: kpack.io/v1alpha2
+kind: ClusterStore
+metadata:
+  name: default
+spec:
+  sources:
+    - image: gcr.io/paketo-buildpacks/java:8.9.0
+    - image: gcr.io/paketo-buildpacks/java-native-image:7.47.0
+    - image: gcr.io/paketo-buildpacks/procfile:5.6.0
+    - image: gcr.io/paketo-buildpacks/go:4.2.0
+    - image: gcr.io/paketo-buildpacks/python:2.9.0
+    - image: gcr.io/paketo-buildpacks/nodejs:1.4.0
+    - image: gcr.io/paketo-buildpacks/nginx:0.12.2
+    - image: gcr.io/paketo-buildpacks/dotnet-core:0.34.0
+    - image: gcr.io/paketo-buildpacks/opentelemetry:0.5.1

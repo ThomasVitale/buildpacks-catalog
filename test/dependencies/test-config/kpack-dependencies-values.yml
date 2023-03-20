@@ -1,0 +1,10 @@
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: buildpacks-catalog-values
+  namespace: carvel-test
+stringData:
+  values.yaml: |
+    kp_default_repository:
+      name: ghcr.io/kadras-io/kpack-build

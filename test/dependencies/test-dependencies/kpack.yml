@@ -1,0 +1,32 @@
+---
+apiVersion: packaging.carvel.dev/v1alpha1
+kind: PackageInstall
+metadata:
+  name: kpack
+  namespace: carvel-test
+  annotations:
+    kapp.k14s.io/change-group: kpack
+    kapp.k14s.io/change-rule.serviceaccount: delete before deleting serviceaccount
+spec:
+  serviceAccountName: kadras-install-sa
+  packageRef:
+    refName: kpack.packages.kadras.io
+    versionSelection:
+      constraints: 0.9.1
+  values:
+    - secretRef:
+        name: kpack-values
+
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: kpack-values
+  namespace: carvel-test
+stringData:
+  values.yaml: |
+    kp_default_repository:
+      name: ghcr.io/kadras-io/kpack-build
+      credentials:
+        username: username
+        password: token
