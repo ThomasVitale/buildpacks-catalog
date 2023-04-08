@@ -1,3 +1,3 @@
 ---
 kp_default_repository:
-  name: ghcr.io/thomasvitale/kpack-builds
+  name: ghcr.io/thomasvitale/buildpacks

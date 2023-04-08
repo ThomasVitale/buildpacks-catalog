@@ -4,6 +4,6 @@
 #@schema/desc "Settings for the default container repository used by kpack. Same as configured in the kpack package."
 kp_default_repository:
   #@schema/desc "The default repository where to publish builder images and dependencies."
-  #@schema/examples ("Repository on GitHub Container Registry", "ghcr.io/thomasvitale/kpack-build")
+  #@schema/examples ("Repository on GitHub Container Registry", "ghcr.io/thomasvitale/buildpacks")
   #@schema/validation min_len=1
   name: ""
