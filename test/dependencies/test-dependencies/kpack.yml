@@ -26,7 +26,7 @@ metadata:
 stringData:
   values.yaml: |
     kp_default_repository:
-      name: ghcr.io/kadras-io/kpack-build
+      name: ghcr.io/kadras-io/buildpacks
       credentials:
         username: username
         password: token
