@@ -1,4 +1,3 @@
-#@ load("@ytt:data", "data")
 ---
 apiVersion: kpack.io/v1alpha2
 kind: ClusterStack
@@ -7,9 +6,9 @@ metadata:
 spec:
   id: "io.buildpacks.stacks.jammy.tiny"
   buildImage:
-    image: paketobuildpacks/build-jammy-tiny:0.1.53
+    image: paketobuildpacks/build-jammy-tiny:0.1.66
   runImage:
-    image: paketobuildpacks/run-jammy-tiny:0.1.53
+    image: paketobuildpacks/run-jammy-tiny:0.1.66
 
 ---
 apiVersion: kpack.io/v1alpha2
@@ -19,6 +18,6 @@ metadata:
 spec:
   id: "io.buildpacks.stacks.jammy"
   buildImage:
-    image: paketobuildpacks/build-jammy-base:0.1.50
+    image: paketobuildpacks/build-jammy-base:0.1.65
   runImage:
-    image: paketobuildpacks/run-jammy-base:0.1.50
+    image: paketobuildpacks/run-jammy-base:0.1.65

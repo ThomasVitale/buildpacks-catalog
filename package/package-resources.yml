@@ -4,7 +4,7 @@ metadata:
   creationTimestamp: null
   name: buildpacks-catalog.packages.kadras.io.0.0.0
 spec:
-  capacityRequirementsDescription: Container registry with > 1GB available space
+  capacityRequirementsDescription: Container registry with at least 1GB available space used by kpack to create builder images.
   licenses:
   - Apache 2.0
   refName: buildpacks-catalog.packages.kadras.io
