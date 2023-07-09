@@ -2,7 +2,7 @@
 
 ![Test Workflow](https://github.com/kadras-io/buildpacks-catalog/actions/workflows/test.yml/badge.svg)
 ![Release Workflow](https://github.com/kadras-io/buildpacks-catalog/actions/workflows/release.yml/badge.svg)
-[![The SLSA Level 3 badge](https://slsa.dev/images/gh-badge-level3.svg)](https://slsa.dev/spec/v0.1/levels)
+[![The SLSA Level 3 badge](https://slsa.dev/images/gh-badge-level3.svg)](https://slsa.dev/spec/v1.0/levels)
 [![The Apache 2.0 license badge](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Follow us on Twitter](https://img.shields.io/static/v1?label=Twitter&message=Follow&color=1DA1F2)](https://twitter.com/kadrasIO)
 
@@ -32,10 +32,9 @@ Buildpacks Catalog requires the [kpack](https://github.com/kadras-io/package-for
 Add the Kadras [package repository](https://github.com/kadras-io/kadras-packages) to your Kubernetes cluster:
 
   ```shell
-  kubectl create namespace kadras-packages
   kctrl package repository add -r kadras-packages \
     --url ghcr.io/kadras-io/kadras-packages \
-    -n kadras-packages
+    -n kadras-packages --create-namespace
   ```
 
 <details><summary>Installation without package repository</summary>
@@ -74,7 +73,7 @@ Verify the installed packages and their status:
 ## 📙&nbsp; Documentation
 
 Documentation, tutorials and examples for this package are available in the [docs](docs) folder.
-For documentation specific to kpack, check out [github.com/pivotal/kpack](https://github.com/pivotal/kpack).
+For documentation specific to kpack, check out [github.com/buildpacks-community/kpack](https://github.com/buildpacks-community/kpack).
 
 ## 🎯&nbsp; Configuration
 
