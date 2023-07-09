@@ -6,9 +6,9 @@ metadata:
 spec:
   id: "io.buildpacks.stacks.jammy.tiny"
   buildImage:
-    image: paketobuildpacks/build-jammy-tiny:0.1.66
+    image: paketobuildpacks/build-jammy-tiny:0.1.69
   runImage:
-    image: paketobuildpacks/run-jammy-tiny:0.1.66
+    image: paketobuildpacks/run-jammy-tiny:0.1.69
 
 ---
 apiVersion: kpack.io/v1alpha2
@@ -18,6 +18,6 @@ metadata:
 spec:
   id: "io.buildpacks.stacks.jammy"
   buildImage:
-    image: paketobuildpacks/build-jammy-base:0.1.65
+    image: paketobuildpacks/build-jammy-base:0.1.67
   runImage:
-    image: paketobuildpacks/run-jammy-base:0.1.65
+    image: paketobuildpacks/run-jammy-base:0.1.67
