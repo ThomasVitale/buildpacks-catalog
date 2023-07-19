@@ -1,0 +1,102 @@
+---
+apiVersion: imgpkg.carvel.dev/v1alpha1
+images:
+- annotations:
+    kbld.carvel.dev/id: gcr.io/paketo-buildpacks/dotnet-core
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: latest
+          url: gcr.io/paketo-buildpacks/dotnet-core
+  image: gcr.io/paketo-buildpacks/dotnet-core@sha256:a11376a7cf3326e26f409fd1730ca4aed3a0b151030832261066420eadf6d254
+- annotations:
+    kbld.carvel.dev/id: gcr.io/paketo-buildpacks/go
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: latest
+          url: gcr.io/paketo-buildpacks/go
+  image: gcr.io/paketo-buildpacks/go@sha256:36cf2bb6c98878dfb61f29fa0867ab258ea808fdd009a0f33acea670a399344f
+- annotations:
+    kbld.carvel.dev/id: gcr.io/paketo-buildpacks/java
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: latest
+          url: gcr.io/paketo-buildpacks/java
+  image: gcr.io/paketo-buildpacks/java@sha256:2f73e31b1eee4a1934ecc6981f41d7c59c8659078fcac8e3605bfc983000545d
+- annotations:
+    kbld.carvel.dev/id: gcr.io/paketo-buildpacks/java-native-image
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: latest
+          url: gcr.io/paketo-buildpacks/java-native-image
+  image: gcr.io/paketo-buildpacks/java-native-image@sha256:950a8852e1d8b52acb82ade96b4071e65cceb336eb10ecc358c64c705c8df783
+- annotations:
+    kbld.carvel.dev/id: gcr.io/paketo-buildpacks/nodejs
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: latest
+          url: gcr.io/paketo-buildpacks/nodejs
+  image: gcr.io/paketo-buildpacks/nodejs@sha256:c52b476f164bb7dde689b02e9825c05d9d45f1f24914b84eef89600ca776fc14
+- annotations:
+    kbld.carvel.dev/id: gcr.io/paketo-buildpacks/opentelemetry
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: latest
+          url: gcr.io/paketo-buildpacks/opentelemetry
+  image: gcr.io/paketo-buildpacks/opentelemetry@sha256:a86ec65cd4ec3a72ad0c4927182836f7558dc99de6dd8c4c8cf1cf950079898b
+- annotations:
+    kbld.carvel.dev/id: gcr.io/paketo-buildpacks/procfile
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: latest
+          url: gcr.io/paketo-buildpacks/procfile
+  image: gcr.io/paketo-buildpacks/procfile@sha256:d38fe6bf178b6242a2dc04e264686523436a296b6cd15f1c5e7a47fc84d8e131
+- annotations:
+    kbld.carvel.dev/id: gcr.io/paketo-buildpacks/python
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: latest
+          url: gcr.io/paketo-buildpacks/python
+  image: gcr.io/paketo-buildpacks/python@sha256:49cfa0bd21c3aa1a6ffe3fa657e16d318a4b8a57be178db84097bf179eae380d
+- annotations:
+    kbld.carvel.dev/id: gcr.io/paketo-buildpacks/ruby
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: latest
+          url: gcr.io/paketo-buildpacks/ruby
+  image: gcr.io/paketo-buildpacks/ruby@sha256:e460f59065bb189009801001556279612c02f82c847e001c08b61fea812a6346
+- annotations:
+    kbld.carvel.dev/id: gcr.io/paketo-buildpacks/web-servers
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: latest
+          url: gcr.io/paketo-buildpacks/web-servers
+  image: gcr.io/paketo-buildpacks/web-servers@sha256:acf4177266587be7e2fce3222b0fdbca67a9118ae0ae2a7d86b125b52d46b9c3
+- annotations:
+    kbld.carvel.dev/id: paketobuildpacks/build-jammy-base
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: latest
+          url: paketobuildpacks/build-jammy-base
+  image: index.docker.io/paketobuildpacks/build-jammy-base@sha256:91f03ef0601247a861247c75803de5b416aaf623945ce679cf26201be445434a
+- annotations:
+    kbld.carvel.dev/id: paketobuildpacks/build-jammy-tiny
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: latest
+          url: paketobuildpacks/build-jammy-tiny
+  image: index.docker.io/paketobuildpacks/build-jammy-tiny@sha256:5345b0934515f8a05cde32481aeb8e082dd38e3bd6a7c680a9d865eb5924e2b7
+- annotations:
+    kbld.carvel.dev/id: paketobuildpacks/run-jammy-base
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: latest
+          url: paketobuildpacks/run-jammy-base
+  image: index.docker.io/paketobuildpacks/run-jammy-base@sha256:be469f0808bd338280f7e6f75a37ae7804e002a54ee100f104686dc148bb43a0
+- annotations:
+    kbld.carvel.dev/id: paketobuildpacks/run-jammy-tiny
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: latest
+          url: paketobuildpacks/run-jammy-tiny
+  image: index.docker.io/paketobuildpacks/run-jammy-tiny@sha256:13e8d99889ebf5463832201eb64d0397d38aeb3af02740f545a04760ea8c5862
+kind: ImagesLock
