@@ -9,15 +9,3 @@ spec:
     image: paketobuildpacks/build-jammy-tiny
   runImage:
     image: paketobuildpacks/run-jammy-tiny
-
----
-apiVersion: kpack.io/v1alpha2
-kind: ClusterStack
-metadata:
-  name: jammy-base
-spec:
-  id: "io.buildpacks.stacks.jammy"
-  buildImage:
-    image: paketobuildpacks/build-jammy-base
-  runImage:
-    image: paketobuildpacks/run-jammy-base
