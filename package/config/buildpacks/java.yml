@@ -1,0 +1,7 @@
+---
+apiVersion: kpack.io/v1alpha2
+kind: ClusterBuildpack
+metadata:
+  name: java
+spec:
+  image: gcr.io/paketo-buildpacks/java

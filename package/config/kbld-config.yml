@@ -15,7 +15,7 @@ searchRules:
       name: image
       path: [spec, runImage]
   
-  # Resolves the image references from the Stores.
+  # Resolves the image references from the Buildpacks.
   - keyMatcher: 
       name: image
-      path: [spec, source, {allIndexes: true}]
+      path: [spec]

@@ -1,0 +1,7 @@
+---
+apiVersion: kpack.io/v1alpha2
+kind: ClusterBuildpack
+metadata:
+  name: dotnet-core
+spec:
+  image: gcr.io/paketo-buildpacks/dotnet-core
