@@ -4,7 +4,9 @@
 ![Release Workflow](https://github.com/kadras-io/buildpacks-catalog/actions/workflows/release.yml/badge.svg)
 [![The SLSA Level 3 badge](https://slsa.dev/images/gh-badge-level3.svg)](https://slsa.dev/spec/v1.0/levels)
 [![The Apache 2.0 license badge](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Follow us on Twitter](https://img.shields.io/static/v1?label=Twitter&message=Follow&color=1DA1F2)](https://twitter.com/kadrasIO)
+
+> **Warning**
+> This package has been archived together with the kpack package. If you need a build service, you can choose GitHub Actions, supported by Kadras, or bring your own build service package.
 
 A Carvel package providing a set of buildpacks, stacks, and builders to use with [kpack](https://github.com/kadras-io/package-for-kpack), a Kubernetes-native implementation of [Cloud Native Buildpacks](https://buildpacks.io) to build application source code into OCI images.
 
